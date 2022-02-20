@@ -1,0 +1,104 @@
+h1,
+h2,
+h3 {
+  font-family: "PT mono", monospace;
+  color: rgb(0, 128, 128);
+}
+h2 {
+  color: rgb(53, 53, 43);
+}
+h6 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+h1 {
+  font-weight: 900;
+  font-size: 50px;
+  margin-bottom: 0px;
+}
+.container {
+  background-image: url(https://cdn.stocksnap.io/img-thumbs/960w/mountains-sky_SZ5GFMXWLW.jpg);
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 4px;
+  padding: 20px;
+}
+.currentCity {
+  max-width: 100%;
+  margin: 10px auto;
+  border-radius: 4px;
+  padding: 40px;
+  background-color: rgb(72, 232, 253);
+}
+.currentConditions {
+  max-width: 100%;
+  margin: 10px auto;
+  border-radius: 4px;
+  padding: 20px;
+  background-color: rgb(72, 232, 253);
+}
+.nextForecast {
+  margin: 10px auto;
+  border-radius: 4px;
+  max-width: 600px;
+  padding: 40px;
+  background-color: rgb(72, 232, 253);
+}
+.temperature {
+  font-size: 60px;
+  font-family: "PT mono", monospace;
+}
+.weather-icon {
+  height: 64px;
+  width: 64px;
+  margin-right: 10px;
+  margin-top: 0px;
+}
+.unit {
+  position: relative;
+  top: -34px;
+}
+.conditions {
+  list-style: none;
+  font-size: 15px;
+}
+.dayOne {
+  list-style: none;
+  border-style: solid;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 100px;
+  padding-left: 0;
+}
+.dayTwo {
+  list-style: none;
+  border-style: solid;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 100px;
+  padding-left: 0;
+}
+.dayThree {
+  list-style: none;
+  border-style: solid;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 100px;
+  padding-left: 0;
+}
+.dayFour {
+  list-style: none;
+  border-style: solid;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 100px;
+  padding-left: 0;
+}
+.dayFive {
+  list-style: none;
+  border-style: solid;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 100px;
+  padding-left: 0px;
+}
