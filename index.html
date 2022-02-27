@@ -24,7 +24,7 @@
   <body>
     <div class="container">
       <div class="currentCity">
-        <h1 id="city">Denver</h1>
+        <h1 id="city"></h1>
         <h6 id="date">Date</h6>
         <div class="row">
           <div class="col">
@@ -42,26 +42,29 @@
         </div>
       </div>
       <div class="currentConditions">
-        <h2 id="description">Sunny</h2>
+        <h2 id="description"></h2>
         <div class="row">
-          <div class="col-4">
+          <div class="col-3">
             <span class="weather-icon"
               ><img
-                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-                alt="Cloudy icon"
-                class="weather-icon float-left"
+                src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+                alt="Clear"
+                id="weather-icon"
               />
             </span>
           </div>
           <div class="col-4">
-            <span class="temperature" id="temperature">50</span
-            ><span class="unit">°F</span>
+            <span class="temperature" id="temperature"></span
+            ><span class="unit"
+              ><a href="#" id="fahrenheit-link" class="active">°F</a> |
+              <a href="#" id="celsius-link">°C</a>
+            </span>
           </div>
+
           <div class="col-4">
             <ul class="conditions">
               <li>Wind:<span id="wind">3</span>mph</li>
               <li>Humidity:<span id="humidity">24</span>%</li>
-              <li>Precipitation: 0%</li>
             </ul>
           </div>
         </div>
@@ -70,19 +73,19 @@
         <h3>Next 5 days Forecast</h3>
         <div class="row">
           <div class="col-2">
-            <span class="border border-primary">Day 1</span>
+            <span>Day 1 </span>
           </div>
           <div class="col-2">
-            <span class="border border-primary">Day 2</span>
+            <span>Day 2 </span>
           </div>
           <div class="col-2">
-            <span class="border border-primary">Day 3</span>
+            <span>Day 3 </span>
           </div>
           <div class="col-2">
-            <span class="border border-primary">Day 4</span>
+            <span>Day 4</span>
           </div>
           <div class="col-2">
-            <span class="border border-primary">Day 5</span>
+            <span>Day 5</span>
           </div>
         </div>
         <div class="row">
@@ -90,7 +93,7 @@
             <ul class="dayOne">
               <li>⛈</li>
               <li>39°F</li>
-              <li>15°</li>
+              <li>15°F</li>
             </ul>
           </div>
           <div class="col-2">
@@ -123,13 +126,7 @@
           </div>
         </div>
       </div>
-      <footer>
-        <a href="https://github.com/wendyos/fun-weather-app">
-          Open-source code by Yewande Oshinubi
-        </a>
-      </footer>
     </div>
-
     <script src="src/app.js"></script>
   </body>
 </html>
