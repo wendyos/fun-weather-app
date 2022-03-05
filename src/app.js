@@ -14,6 +14,26 @@ let days = [
 let day = days[now.getDay()];
 h6.innerHTML = `${day} ${hours}:${minutes}`;
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = `
+  <div class="row">
+            <div class="col-2">
+              <div class="weather-forecast-date">Sun</div>
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+                alt=""
+                width="30"
+              />
+              <div class="weather-forecast-temperatures">
+                <span class="weather-forecast-temperature-max">18°</span>
+                <span class="weather-forecast-temperature-min">12°F</span>
+              </div>
+            </div>
+            </div>
+  `;
+}
+
 function showCity(event) {
   event.preventDefault();
   let searchInput = document.querySelector("#weather-search");
@@ -75,7 +95,7 @@ function displayFahrenheitTemperature(event) {
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
-
+displayForecast();
 let fahrenheitTemperature = null;
 
 let celsiusLink = document.querySelector("#celsius-link");
