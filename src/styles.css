@@ -17,6 +17,9 @@ h1 {
   font-size: 50px;
   margin-bottom: 0px;
 }
+.button {
+  background-color: rgb(190, 57, 57);
+}
 .container {
   background-image: url(https://cdn.stocksnap.io/img-thumbs/960w/mountains-sky_SZ5GFMXWLW.jpg);
   margin: 20px auto;
