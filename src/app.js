@@ -1,18 +1,25 @@
-let now = new Date();
-let h6 = document.querySelector("h6");
-let hours = now.getHours();
-let minutes = now.getMinutes();
-let days = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-];
-let day = days[now.getDay()];
-h6.innerHTML = `${day} ${hours}:${minutes}`;
+function formatDate(timestamp) {
+  let date = new Date(timestamp);
+  let hours = date.getHours();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+  let minutes = date.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let day = days[date.getDay()];
+  return `${day} ${hours}:${minutes}`;
+}
 
 function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
@@ -82,7 +89,9 @@ function displayWeatherCondition(response) {
   let iconElement = document.querySelector("#weather-icon");
   fahrenheitTemperature = response.data.main.temp;
   document.querySelector("#city").innerHTML = response.data.name;
-
+  document.querySelector("#date").innerHTML = formatDate(
+    response.data.dt * 1000
+  );
   document.querySelector("#temperature").innerHTML = Math.round(
     fahrenheitTemperature
   );
